@@ -1,0 +1,12 @@
+.footer {
+    background-color: black;
+    margin: 3px;
+}
+
+img {
+    max-width: 150px;
+}
+
+.parent {
+    display: flex;
+}

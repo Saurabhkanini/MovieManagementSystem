@@ -1,0 +1,17 @@
+<app-navbarr></app-navbarr>
+
+<div class="border border-dark col-sm-6 mt-3">
+    <h2><b class="text-dark">Add Movies</b></h2>
+    <input type="text" name="" id="" placeholder="Enter MovieName" [(ngModel)]="addMovie.MovieName"><br><br>
+    <input type="text" name="" id="" placeholder="Enter ActorName" [(ngModel)]="addMovie.Actor"><br><br>
+    <input type="text" name="" id="" placeholder="Enter ActressName" [(ngModel)]="addMovie.Actress"><br><br>
+    <input type="text" name="" id="" placeholder="Enter Genres" [(ngModel)]="addMovie.Genres"><br><br>
+    <input type="text" name="" id="" placeholder="Enter ProductionHouseName"
+        [(ngModel)]="addMovie.ProductionHouse"><br><br>
+    <input type="text" name="" id="" placeholder="Enter DirectorName" [(ngModel)]="addMovie.Director"><br><br>
+    <input type="file" placeholder="Upload Image" (change)="onFileSelected($event)"><br><br>
+    <button (click)="AddMovie()" class="btn btn-primary">Add Movie</button> <a href="home/movies"
+        class="btn btn-danger ms-3">Close</a>
+
+</div>
+<app-footer></app-footer>

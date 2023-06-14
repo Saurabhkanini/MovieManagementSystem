@@ -1,0 +1,22 @@
+<app-navbarr></app-navbarr>
+<img class="movieImg mb-3" src="../../assets/images/moviess.webp" alt="">
+<p class="h3 text-danger fw-bold ms-2 mb-2">Add NewMovie
+    <a class="btn btn-danger bt btn-sm" routerLink="/home/addmovie">
+        <i class="fa fa-plus-circle"></i> New</a>
+</p>
+<div class="allcontact ms-2">
+    <div class="moviesCard" *ngFor="let m of movies">
+        <img [src]=" 'data:image/png;base64,' + m.imageData" class="contentImg">
+        <p><b>MovieId:-</b>{{m.id}}</p>
+        <p><b>MovieName:-</b>{{m.movieName}}</p>
+        <p><b>Actors:-</b>{{m.actor}}</p>
+        <p><b>Actress:-</b>{{m.actress}}</p>
+        <p><b>Genres:-</b>{{m.genres}}</p>
+        <p><b>Director:-</b>{{m.director}}</p>
+        <p><b>ProductionHouse:-</b>{{m.productionHouse}}</p>
+        <a href="home/viewMovie/{{m.id}}" class="btn btn-success">ViewMovie</a>
+        <button class="btn btn-danger ms-2" (click)="deleteMovie(m.id)">DeleteMovie</button>
+        <a href="home/updateMovie/{{m.id}}" class="btn btn-primary mt-1">UpdateMovie</a>
+    </div>
+</div>
+<app-footer></app-footer>

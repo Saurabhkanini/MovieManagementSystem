@@ -1,0 +1,20 @@
+img {
+    max-width: 200px;
+    border-radius: 50px;
+    max-height: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    max-width: 27%;
+}
+
+form {
+    width: 300px;
+}

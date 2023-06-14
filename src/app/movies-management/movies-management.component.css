@@ -1,0 +1,28 @@
+.movieImg {
+    width: 1530px;
+    max-height: 450px;
+    margin-top: 5px;
+}
+
+.moviesCard {
+    max-width: 270px;
+    height: fit-content;
+    border: 2px solid black;
+    background-color: gray;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+.contentImg {
+    max-width: 250px;
+    max-height: 200px;
+}
+
+p {
+    color: white;
+}
+
+.allcontact {
+    display: flex;
+    gap: 15px;
+}
